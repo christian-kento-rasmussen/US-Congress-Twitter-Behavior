@@ -1,13 +1,13 @@
-baseURL = "https://peterampazzo.github.io/project-website-template/"
-title = "Project Title"
-description = "This is a project description"
+baseURL = "https://christian-kento-rasmussen.github.io/US-Congress-Twitter-Behavior/"
+title = "US-Congress-Twitter-Behavior"
+description = "US-Congress-Twitter-Behavior description"
 relativeURLs = true
 theme = "theme" 
 [params]
-    authors = ["Henrik Nielsen", "Inga Jensen", "Mikkel Andersen"]
+    authors = ["christian", "Mathias", "Benjamin"]
     notebook = "/explainer-notebook.html"
     data = "https://drive.google.com"
-    github = "https://github.com/peterampazzo/project-website-template"
+    github = "https://github.com/christian-kento-rasmussen/US-Congress-Twitter-Behavior"
     [[params.nav]]
         label = "Data"
         link = "/data-description"
