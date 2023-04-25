@@ -2,7 +2,7 @@ baseURL = "https://christian-kento-rasmussen.github.io/US-Congress-Twitter-Behav
 title = "US-Congress-Twitter-Behavior"
 description = "US-Congress-Twitter-Behavior description"
 relativeURLs = true
-theme = "theme" 
+theme = "theme"  
 [params] 
     authors = ["christian", "Mathias", "Benjamin"]
     notebook = "/explainer-notebook.html"
