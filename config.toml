@@ -3,7 +3,7 @@ title = "US-Congress-Twitter-Behavior"
 description = "US-Congress-Twitter-Behavior description"
 relativeURLs = true
 theme = "theme" 
-[params]
+[params] 
     authors = ["christian", "Mathias", "Benjamin"]
     notebook = "/explainer-notebook.html"
     data = "https://drive.google.com"
