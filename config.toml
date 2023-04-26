@@ -13,14 +13,14 @@ theme = "theme"
         link = "/data-description"
     [[params.nav]]
         label = "Network"
-        link = "/network-analysis"
+        link = "/network-structure"
     [[params.nav]]
         label = "Communities"
-        link = "/text-analysis"
+        link = "/community-structure"
     [[params.nav]]
         label = "Text"
-        link = "/text-analysis"
+        link = "/congressional-communities"
     [[params.nav]]
         label = "Evolution"
-        link = "/text-analysis"
+        link = "/evolving-dynamics"
 

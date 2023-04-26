@@ -36,13 +36,15 @@ Each row in our accounts data is a single account, and consists of the following
 Size: 1754
 
 
+Tweets dataframe:
 
+This dataframe describes data related to each tweet. It tells us 
 
 
 
 #How we created it?
 
-
+![](/images/degree-distribution.png)
 
 
 
