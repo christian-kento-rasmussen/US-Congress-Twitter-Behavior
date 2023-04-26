@@ -4,13 +4,33 @@ prev: "/"
 next: network-structure
 ---
 
-#What it is?
+To perform this analysis we need to collect tweets from member of the United States Congress. An ideal way to do this, would be to call the twitter api and request tweets in a specific time period with hastags or accounts names that mathces with member of the congress. However, this approach is not feasible after Twitter has changed their policy when Mr. Musk accouired the company. Therefore, we have used the public available dataset of US Congress tweets hosted on [github](https://github.com/alexlitel/congresstweets) and part of the open source project [Congressional Tweet Automator](https://github.com/alexlitel/congresstweets-automator).
 
-Our data consists of foru dataframes, one big directed multigraph and then one multigraph for every year of tweets from 2017 up to and including 2023.
+The raw data consist of 2.6GB of json files with tweets from 2017 up to and including 2023. The data is structured in a way that each json file contains tweets from a specific month and year. An example of a raw tweet is shown below.
 
-The four dataframes are:
+```
+{
+    "id":"879411283275153408",
+    "screen_name":"RosLehtinen",
+    "time":"2017-06-26T14:49:23-04:00",
+    "link":
+        "https://www.twitter.com/RosLehtinen/statuses/87
+        9411283275153408",
+    "text":
+        "With my hubby Dex accepting @Rotary Club award! 
+        Their core values &amp; philanthropic mission 
+        strive to improve our #SoFla cmnty! 
+        @EugeneFlinn https://t.co/hxWKhoZR9z",
+    "source":"Twitter Web Client",
+    "user_id":"14275291"
+}
+```
 
-Users dataframe: 
+This data has then been parsed into 4 differnet dataframes. Which is used to construct a single directed multigraph where nodes are users and edges are each time a user mentions ('@name_of_mention') another user in a tweet. The graph and dataframe have also been filted based on tweet year for later analysis.
+
+# The four dataframes and graph are:
+
+## 1. Users dataframe: (@benjamin husk lige at nævn at vi har filtered bruger til kun nogle bestemte)
 
 The main purpose of the user dataframe is to gather data on the real life organizations or humans who use the twitter accounts.
 
@@ -23,7 +43,7 @@ Each user represents a person or organization related to the U.S congress, who m
 
 Size: 806
 
-Accounts dataframe:
+## 2. Accounts dataframe:
 
 As each user can have multiple Twitter accounts, we needed a dataframe to link between accounts and the real life organization/person that uses these whenever, we wanted to figure out who had tweeted something, and at whom.
 
@@ -36,16 +56,23 @@ Each row in our accounts data is a single account, and consists of the following
 Size: 1754
 
 
-Tweets dataframe:
+## 3. Tweets dataframe:
 
 This dataframe describes data related to each tweet. It tells us 
+text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, 
 
+## 4. last dataframe:
+text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, 
 
+## 4. Multidirected graph:
 
-#How we created it?
+The multidirectional graph was created by making each user a node and each time a user mentions another user in a tweet an edge. The graph is directed as the order of the mention is important. The graph is multidirectional as there often are multiple tweets between users. We choose to make it multidirectional because we wanted to keep the information (text, sentiement...) that each individual tweet contains instead of just counting the number of tweets between users.
+
+The graph contains ?? nodes and ???? edges. The distribution of degree of edges is shown below.
 
 ![](/images/degree-distribution.png)
 
+From the graph we can see that the distribution of degree of edges is very skewed. This means that there are a few nodes with a very high degree and a lot of nodes with a very low degree. This is expected as there are a few users who are very active on twitter and a lot of users who are not. **Which looks like it could follow a power law (EXPAND??)**
 
 
 <!--- 
