@@ -14,8 +14,9 @@ We want to start by investigate the network structure of the U.S congress. Speci
 
 From this we can observe that that we get a p value of under 0.05 which means that the fraction of edges from a member that is toward a member of the same party is significantly higher than what we would expect if the party affiliation was randomly distributed. This supports the  belive that members of the U.S congress are more likely to messsage eachother internally in each party.
 
-To further investiage this, we compute the assortativity for the 
+To further investiage this, we compute the assortativity coefficient with respect to party. The count of edges can be seen in the confusion metrix below. This results in a assortativity coefficient of -1.24. From this we can intepret that members are more likely to communicate within the party, but there is also a lot of mentions of oposing parties in their tweets. It is important to mention that this only counts mentions in each tweet not how the mention is (positive or negative) if it is a dialog or an attack.
 
+![](/images/matrixe.png)
 
 
 
