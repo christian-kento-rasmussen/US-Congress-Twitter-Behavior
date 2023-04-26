@@ -1,52 +1,8 @@
 ---
 title: Data description
-prev: "/"
-next: network-structure
+prev: "community-structure"
+next: evolving-dynamics
 ---
-
-#What it is?
-
-Our data consists of foru dataframes, one big directed multigraph and then one multigraph for every year of tweets from 2017 up to and including 2023.
-
-The four dataframes are:
-
-Users dataframe: 
-
-The main purpose of the user dataframe is to gather data on the real life organizations or humans who use the twitter accounts.
-
-Each user represents a person or organization related to the U.S congress, who may have multiple Twitter accounts. Each row in our users dataframe has the following information:
-* The user's name, which we use as a unique identifier, as no members of congress in our dataset have the same name.
-* Which house they're part of (representatives or senate)
-* Their type, that is, wheter the user is a commitee, a member (human), party or caucus
-* Their political party, if any
-* Which U.S state they represent, if any
-
-Size: 806
-
-Accounts dataframe:
-
-As each user can have multiple Twitter accounts, we needed a dataframe to link between accounts and the real life organization/person that uses these whenever, we wanted to figure out who had tweeted something, and at whom.
-
-Each row in our accounts data is a single account, and consists of the following data:
-* ID, the ID of that specific account
-* screen_name, the name of that specific account
-* account_type, whether it is an office or campaign account
-* name, the name of the user behind the account
-
-Size: 1754
-
-
-
-
-
-
-#How we created it?
-
-
-
-
-
-<!--- 
 
 ## How we have created our dataset
 
@@ -82,4 +38,3 @@ Quisque iaculis, sem quis imperdiet faucibus, nunc lorem feugiat purus, vestibul
 <img src="/images/dtu-logo.png" width="200" />
 
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse eu tellus ut erat porttitor luctus. Vivamus aliquam auctor massa, in auctor orci. Ut quis enim ut lorem consectetur blandit dictum eu mauris.
---->
