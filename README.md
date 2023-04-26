@@ -1,74 +1,27 @@
-# project-website-template
+# US Congress Twitter Behavior
 
-__A website template for your final project__ 🔮
+<!---  
+    Background på US congress  
+--->
 
-By using this template you would be able to create your own website and deploy it on Github Pages. This project creates a static website, to test it locally (on your machine) you need to install [Hugo](https://gohugo.io/getting-started/installing/). This facilitates you to develop it and display the changes in real-time.
+The United States Congress is the the legislature of the United States Government [[1]](https://en.wikipedia.org/wiki/United_States_Congress). It is responsible for creating and ractifying exisitnig laws. It is composed of two chambers the senate with 100 elected officials and the house with 435 elected officials giving a total of 534. All members of both houses are elected by the public which means that they all need to have good public relations. This is where social media comes into play. Social media is a great way to reach out to the public and show what they are doing and why voters should vote for them over the competition.
 
-Therefore, you can click on the [***Use this template***](https://github.com/peterampazzo/project-website-template/generate) button (including all branches!) 😉
+<!---  
+    Hvad vi gerne vil undersøge
+--->
 
-[**DEMO**](https://peterampazzo.github.io/project-website-template/)
+## In this report, we want to explore how the US Congress communicates on twitter.
 
-More details are explained in depth below. To briefly explain how this project works: 
-* You can write all the content in Markdown using the same syntax you may have already used in Jupyter Notebooks
-* Hugo makes it easier to build all the HTML web pages and reuse the same template across different pages
-* Github Actions allows running for free a job that builds and deploy the website
-* Github Pages offers to publish a static website for free
+To view the report, click [**here to go to website**](https://christian-kento-rasmussen.github.io/US-Congress-Twitter-Behavior)
 
-## ❓ How to
+It seems like there is a lot of talk about polarization in US politics between democrats and republicans in the news. We would like to explore whether this polarization exists in reality, that is, do democrats and republicans actually never cooperate, or this just an image potrayed by the media?
+As a proxy measurement for this, we've decided to look at twitter exchanges between members of the U.S congress and organization related to these in order to look for patterns that may tell us, how the U.S congress communciates. Our data consists of tweets made by members of congress, governmental organization and caucuses from 2017-2023 plus data like political affiliation and region of the different political users. [Dataset](data-description)
 
-### Develop
+Specifically, we start off by investigating the relationship between democrats and republicans to establish, whether our big community (the U.S congress) can in fact be divided into seperate communities based on political affiliation. We do this by looking at the modularity of dividing the users into communities based on political affiliation using the Louvain algorithm. We also look at the assortativity between the different political affiliation. 
 
-If you managed to install Hugo on your machine ([official guide](https://gohugo.io/getting-started/installing/) or an alternative for [Windows](https://www.techielass.com/how-to-install-hugo-on-windows-10/) users), and cloned the repo, you can run `hugo serve`. At this point, you can surf your website from a browser at: [http://localhost:1313/](http://localhost:1313/).
+Should our hypothesis, that the U.S congress is polarized not undoubtadly hold, we would like to investiage what relations that actually best describe the way the U.S congress communicates and organizes itself. We do this by dividing the different Twitter users into communities with the help of the Louvain algorithm. From here, we look to see if the modularity increases, that is, do we get a better community partitioning.
 
-When you commit changes to the main branch, a job (which runs using Github Actions) will build a new copy of your website and publish it on Github Actions. You might need to check the repo settings (under the 'Pages' tab).
+From here we would like to see, what underlying structures, if not political party, that binds the different communities together. Is it a special commitee that they talk a lot about, a law or a maybe a more general topic like foreign policy or welfare? We do this by doing text analysis on the biggest communities to see which keywords that describe them best. We would furthermore also like to do some wordclouds on these communities. 
 
-### Add new content
+Finally, we would like to see, how the relationship between democrats and republicans has changed over the years. We do this by looking at the democrat-republican modularity and associativity throughout the years. We also look at what has changed in the two parties' talking points by doing TF-IDF on the two parties' corpuses throughout the years.
 
-In the `content/` folder you can find several markdown files. `_index.md` would be your homepage. Therefore, you are free to create new markdown files. You need to make sure to include these fields in the beginning of your file:
-
-```markdown
----
-title: Page title
-prev: link-prev-page
-next: link-next page
----
-```
-
-Whereas, `prev` and `next` are the link to the pages displayed at the bottom of the page. If omitted, no link is going to be displayed!
-
-Please, check the examples provided and the source code. By using Markdown you will be able to include:
-
-* Formatted text (bold, italic)
-* Images
-* Tables
-* Math formula
-* Code
-* Quotes
-* Lists
-
-### Update `config.toml`
-
-The [`config.toml`](https://github.com/peterampazzo/project-website-template/blob/main/config.toml) file contains many variables related to your project. Here you can update much information such as: Project title, Authors, Links, Navbar. The changes are propagated and displayed automatically on every page you've created.
-
-Make sure to update the `baseUrl` variable! This variable is extremely important for publishing the website on Github Pages. The variable should follow this format `https://<github_username>.github.io/<repo_name>`.
-
-### Assets 
-
-Images and other files can also make public together with the website. They must be stored in the `static/` folder. You may find already the DTU logo saved there. Also, you can export your Jupyter notebook and save it as an HTML file (`File > Export Notebook as > HTML`) and save it there. This way you can publish [your code](https://peterampazzo.github.io/project-website-template/explainer-notebook.html).
-
-### Build and deploy
-
-At every change committed to the `main` branch a job running using Github Actions will build and deploy your website on Github Actions. The [job workflow](https://github.com/peterampazzo/project-website-template/blob/main/.github/workflows/gh-pages.yml) is written in YAML, you shouldn't need to apply any changes. It is triggered every time a new commit is pushed to the `main` branch, and it builds and publishes a new version of the website on the `gh-pages` branch.
-
-The website URL is going to be live at: `https://<github_username>.github.io/<repo_name>`.
-Please make sure to check the repository settings, you would need to enable Github Pages: `Settings > Pages`. In `Source` select `gh-pages` as branch and keep `/ (root)` as directory. Click on Save 😉
-
-## Tech stuff 🤠
-
-This template has been built on top of [Minimal Blog](https://github.com/tailwindtoolbox/Minimal-Blog) and wrapped into a [Hugo](https://gohugo.io/) website. 
-
-Some of the technologies used are:
-* [Hugo](https://gohugo.io/)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [MathJax](https://www.mathjax.org/)
-* [Feather Icons](https://feathericons.com/)

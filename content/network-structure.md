@@ -8,14 +8,14 @@ next: community-structure
 Specifically, we start off by investigating the relationship between democrats and republicans to establish, whether our big community (the U.S congress) can in fact be divided into seperate communities based on political affiliation. We do this by looking at the modularity of dividing the users into communities based on political affiliation using the Louvain algorithm. We also look at the assortativity between the different political affiliation. [Network-structure](network-structure)
 -->
 
-We want to start by investigate the network structure of the U.S congress. Specifically, we want to investigate the relationship between the different parties. As a starting, we compute the fraction of edges from a member that is toward a member of the same party. We then 100 times shuffle the members party affiliation and plot the distribuition as a histogram together with the actual fraction from the data.The results are shown in the figure below. 
+We want to start by investigating the network structure of the U.S congress. Specifically, we want to investigate the relationship between the different parties. As a starting, we compute the fraction of edges from a member that is toward a member of the same party. We then 100 times shuffle the members party affiliation and plot the distribuition as a histogram together with the actual fraction from the data. The results are shown in the figure below. 
 
 ![](/images/histogram-frac-edges-party.png)
 
 From this we can observe that that we get a p value of under 0.05 which means that the fraction of edges from a member that is toward a member of the same party is significantly higher than what we would expect if the party affiliation was randomly distributed. This supports the  belive that members of the U.S congress are more likely to messsage eachother internally in each party.
-
-To further investiage this, we compute the assortativity coefficient with respect to party. The count of edges can be seen in the confusion metrix below. This results in a assortativity coefficient of -1.24. From this we can intepret that members are more likely to communicate within the party, but there is also a lot of mentions of oposing parties in their tweets. It is important to mention that this only counts mentions in each tweet not how the mention is (positive or negative) if it is a dialog or an attack.
-
+ 
+To further investiage this, we compute the assortativity coefficient with respect to party of the nodes of Republicans, Democrats, and Independents. The count of edges can be seen in the confusion metrix below. This results in an assortativity coefficient of 0.65. This tells is that there is an high  assortivity. It is important to mention that this only counts mentions in each tweet not how the mention is. Is it communication, a pr post, or just..... 
+ 
 ![](/images/matrixe.png)
 
 
