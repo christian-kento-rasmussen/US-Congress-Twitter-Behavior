@@ -36,7 +36,7 @@ If we look at our assortativity, we furthermore get an indication of polarizatio
 
 However, as can be seen from the assortativity matrix, it isn't completely divided; We see a moderate level of cross-party communication. 
 
-Taking both of these statistics in combine, we get an indication, that there is some level of polarization in the U.S congress. We see this in the way, that we get a modularity significantly different from 0 when we divide our graph into party-party or party-chamber, and through the high level of party-party assortavitiy. On the other hand, this polarization isn't complete; Our modularity when dividng along party lines is still moderate, and we see from the assortativity matrix, that there clearly occurs cross-party communication.
+Taking both of these statistics in combination, we get an indication, that there is some level of polarization in the U.S congress. We see this in the way, that we get a modularity significantly different from 0 when we divide our graph into party-party or party-chamber, and through the high level of party-party assortavitiy. On the other hand, this polarization isn't complete; Our modularity when dividng along party lines is still moderate, and we see from the assortativity matrix, that there clearly occurs cross-party communication.
 
 This indicates to us, that there are more complex mechanisms at play, that can describe the way that the two major parties in the U.S congress organize themselves. We suspect, that the best community partitions are centered around subjects and commitees, that is, they're centered around political issues rather than political parties.
 
