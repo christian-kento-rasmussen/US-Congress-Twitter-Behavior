@@ -16,7 +16,12 @@ We want to start by investigating the network structure. Specifically, we want t
 By performing a permutation test, we get a p-value that is far below 0.05. This means that we can conclude on a 0.05 significant level that the chance that a tweet mentions a user with the same party affiliation is statistically significantly higher than it would be by chance. This supports the belive that members of the U.S congress are more likely to messsage eachother internally in each party.
  
 <!-- Vi regner assortativity coefficient with respect to party, det har også implications -->
-To further investiage this, we compute the assortativity coefficient with respect to party for Republicans, Democrats, and Independents. The edge count is shown in the confusion matrix below. This results in an assortativity coefficient of 0.65. 
+To further investiage this, we compute the assortativity coefficient with respect to party for Republicans, Democrats, and Independents. The edge count is shown in the confusion matrix below.
+
+
+![](/images/matrixe.png)
+
+This results in an assortativity coefficient of 0.65. 
 This high party affiliation assortivity coefficient implies some social polarization based on party.
 When doing this analysis it is important to mention that not all mentions/edges are communication betwee user, but some are simply members tagging or promoting other members campaigns. These have been included but arguments can be made for excluding them as they do not represent active conversation.
 
@@ -24,7 +29,9 @@ When doing this analysis it is important to mention that not all mentions/edges 
 If we partition our network into 4 groups based on party affiliation, that is, a community for republicans, democrats, independents and non-alligned, we get a modularity of 0.2. This is a moderate number, and it indicates, that there might be better ways to partition the Congress than purely along party lines.
 
 Specifically, if we take a look at our graph, we see what appears to be four distinct communities along both party as well as chamber lines. 
-<
+
+
+![](/images/DemsRepsNetwork.png)
 
 Partitioning our graph along party-chamber lines, we get a modularity of 0.25.
 
@@ -46,9 +53,6 @@ We will explore this on the next page, where we will use the Louvain algorithm t
 
 
  
-
-
-![](/images/matrixe.png)
 
 
 
