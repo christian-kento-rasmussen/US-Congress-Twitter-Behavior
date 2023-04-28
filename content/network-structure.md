@@ -20,6 +20,34 @@ To further investiage this, we compute the assortativity coefficient with respec
 This high party affiliation assortivity coefficient implies some social polarization based on party.
 When doing this analysis it is important to mention that not all mentions/edges are communication betwee user, but some are simply members tagging or promoting other members campaigns. These have been included but arguments can be made for excluding them as they do not represent active conversation.
 
+<!-- Vi kigger nu på community party-party wise -->
+If we partition our network into 4 groups based on party affiliation, that is, a community for republicans, democrats, independents and non-alligned, we get a modularity of 0.2. This is a moderate number, and it indicates, that there might be better ways to partition the Congress than purely along party lines.
+
+Specifically, if we take a look at our graph, we see what appears to be four distinct communities along both party as well as chamber lines. 
+<
+
+Partitioning our graph along party-chamber lines, we get a modularity of 0.25.
+
+Both numbers are statistically different from 0, indicating, that there might be some truth to the idea, that Republicans and Democrats are polarized around party lines. At the very least, it indicates, that the amount of intra-party clustering the respective parties' chambers do is non-random, and that there therefor is some degree of polarization. 
+
+However, due to the moderate value of our modularity, it is evident, that there are better clusterings than simply party-party or party-chamber.
+
+If we look at our assortativity, we furthermore get an indication of polarization among congressmember. We have an assortativity around party-lines above 0.6, clearly indicating, that there is a higher probability of congress members to communicate with their own party-peers than with those of the opposite party.
+
+However, as can be seen from the assortativity matrix, it isn't completely divided; We see a moderate level of cross-party communication. 
+
+Taking both of these statistics in combine, we get an indication, that there is some level of polarization in the U.S congress. We see this in the way, that we get a modularity significantly different from 0 when we divide our graph into party-party or party-chamber, and through the high level of party-party assortavitiy. On the other hand, this polarization isn't complete; Our modularity when dividng along party lines is still moderate, and we see from the assortativity matrix, that there clearly occurs cross-party communication.
+
+This indicates to us, that there are more complex mechanisms at play, that can describe the way that the two major parties in the U.S congress organize themselves. We suspect, that the best community partitions are centered around subjects and commitees, that is, they're centered around political issues rather than political parties.
+
+That is, republicans tend to communicate more with republicans, not because they're republicans. But rather, because they care about and therefore work with the same issues, which is the reason for why they're both republican to begin with. And vise versa for democrats. 
+
+We will explore this on the next page, where we will use the Louvain algorithm to find the optimal community partitioning. We will explore these partitionings for signs of polarization around party lines, and from there we will investigate, what may be the "center" for these partitionings.
+
+
+ 
+
+
 ![](/images/matrixe.png)
 
 
