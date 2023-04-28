@@ -52,13 +52,6 @@ This follows the logic, that republicans tend to communicate more with republica
 We will explore this on the next page, where we will use the Louvain algorithm to find the optimal community partitioning. We will explore these partitionings for signs of polarization around party lines, and from there we will investigate, what may be the "center" for these partitionings.
 
 
- 
-
-t
-
-
-
-
 
 
 
