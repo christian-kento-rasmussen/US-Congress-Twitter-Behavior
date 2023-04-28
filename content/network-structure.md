@@ -41,7 +41,7 @@ However, due to the moderate value of our modularity, it is evident, that there 
 
 If we look at our assortativity, we furthermore get an indication of polarization among congressmember. We have an assortativity around party-lines above 0.6, clearly indicating, that there is a higher probability of congress members to communicate with their own party-peers than with those of the opposite party.
 
-However, as can be seen from the assortativity matrix, it isn't completely divided; We do see cross-party communication. 
+However, as can be seen from the assortativity matrix, it isn't completely divided; We do see some cross-party communication. 
 
 Taking both of these statistics in combination, we get an indication, that there is some level of polarization in the U.S congress. We see this in the way, that we get a modularity significantly different from 0 when we divide our graph into party-party or party-chamber, and through the high level of party-party assortavitiy. On the other hand, this polarization isn't complete; Our modularity when dividing along party lines is still moderate, and we see from the assortativity matrix, that there clearly occurs cross-party communication.
 
