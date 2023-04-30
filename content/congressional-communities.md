@@ -1,9 +1,31 @@
 ---
-title: Data description
+title: Community Structures Text Analysis
 prev: "community-structure"
 next: evolving-dynamics
 ---
 
+<!-- 
+om here we would like to see, what underlying structures, if not political party, that binds the different communities together. Is it a special commitee that they talk a lot about, a law or a maybe a more general topic like foreign policy or welfare? We do this by doing text analysis on the biggest communities to see which keywords that describe them best. We would furthermore also like to do some wordclouds on these communities. [Congressional-communities](congressional-communities)
+-->
+After finding some appropriate communities, we want to explore what underlying structure that represents them. We do this, by looking at at the tweets that originates from users in a community.
+
+
+
+## TF-IDF
+
+
+
+
+
+## Word clouds
+
+
+
+
+
+
+
+<!--
 ## How we have created our dataset
 
 this was done
@@ -38,3 +60,4 @@ Quisque iaculis, sem quis imperdiet faucibus, nunc lorem feugiat purus, vestibul
 <img src="/images/dtu-logo.png" width="200" />
 
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse eu tellus ut erat porttitor luctus. Vivamus aliquam auctor massa, in auctor orci. Ut quis enim ut lorem consectetur blandit dictum eu mauris.
+-->
