@@ -47,7 +47,7 @@ Taking both of these statistics in combination, we get an indication, that there
 
 This indicates to us, that there are more complex mechanisms at play, that can describe the way that the two major parties in the U.S congress organize themselves. We suspect, that the best community partitions are centered around subjects and commitees, that is, they're centered around political issues rather than political parties.
 
-This follows the logic, that republicans tend to communicate more with republicans, not because they're republicans. But rather, because they care about and therefore work with the same issues, which is the reason for why they're both republican to begin with. And vise versa for democrats. This might also explain why we do not have a complete polarization, as democrats and republicans that care about the same issues will most likely communicate with one another.
+This follows the logic, that republicans tend to communicate more with republicans, not neccessarily because they're republicans. But rather, because they care about and therefore work with the same issues, which is the reason for why they're both republican to begin with. And vise versa for democrats. This might also explain why we do not have a complete polarization, as democrats and republicans that care about the same issues will most likely communicate with one another.
 
 We will explore this on the next page, where we will use the Louvain algorithm to find the optimal community partitioning. We will explore these partitionings for signs of polarization around party lines, and from there we will investigate, what may be the "center" for these partitionings.
 
