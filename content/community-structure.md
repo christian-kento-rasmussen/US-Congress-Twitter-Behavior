@@ -3,6 +3,22 @@ title: Community Structures ??
 prev: network-structure
 next: congressional-communities
 ---
++forord
+
+<!-- Louvain:   
+            Confusion matrix
+            Community size (power law) (farve efter parti?)
+            Evt. statistisk tests
+-->
+
+Using the Louvain clustering algorithm, we optimize for modularity score and get a partitioning with a modularity of 0.35. The Louvain partitioning is compared with the partitioning by party in a confusion matrix below.
+
+![](/images/confmatrixlouvain.png)
+
+In the first two communities found by the algorithm, there is a clear division between republicans and democrats, with about 80% of the democrats and 10% of the republicans in the first community, and about 70% of the republicans and 2% of the democrats in the second community. In the third and fourth communities, the proportion of republicans to democrats vice versa is also low.
+
+This shows a clear tendency that most democrats and republicans primarily communicate within the party on social media, and more rarely across the two main parties. Therefore, an argument can be made that the twitter discourse of the two primary parties is heavily polarized. 
+<!--  -->
 
 <!--
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla tellus, tempus sed lobortis quis, venenatis ac ante. Maecenas accumsan augue ultricies metus hendrerit, in ultrices urna fringilla. Suspendisse lobortis egestas magna, sit amet fermentum ligula tincidunt vitae. Suspendisse cursus non dui a vulputate. Cras vestibulum vulputate enim eu placerat. Ut scelerisque semper justo sit amet auctor. Aliquam sit amet iaculis tortor.
