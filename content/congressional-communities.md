@@ -13,12 +13,30 @@ After finding some appropriate communities, we want to explore what underlying s
 
 ## TF-IDF
 
+TF:
+| Partition | Top 10 Tokens |
+| --- | --- |
+| 0 | act, house, bill, congress, people, proud, american, work, health, need |
+| 1 | house, american, democrats, act, bill, americans, biden, congress, people, border |
+| 2 | senate, bill, act, american, bipartisan, support, help, americans, work, democrats |
+| 3 | senate, act, bill, health, help, care, need, bipartisan, people, americans |
+| 4 | people, house, chairman, act, support, statement, president, security, american, foreign |
+| 5 | budget, chair, senate, bill, tax, process, spending, federal, committee, hearing |
 
 
+TF-IDF
+| Partition | Top 10 TF-IDF |
+| --- | --- |
+| 0 | rep, democracy, safe, caucus, police, de, impeachment, protections, abortion, hate |
+| 1 | rep, impeachment, safe, police, caucus, schiff, fentanyl, abortion, parents, texas |
+| 2 | safe, iowa, hatch, kansas, arkansas, north, tennessee, georgia, dakota, police |
+| 3 | mcconnell, nevada, democracy, protections, safe, conditions, georgia, preexisting, abortion, judiciary |
+| 4 | rm, chm, democracy, allies, partners, ccp, chinese, humanitarian, hong, attack |
+| 5 | wyoming, dnd, nazilinked, duplication, gregg, outlook, laramie, cbos, deliberating, wyomings |
 
 
 ## Word clouds
-
+![](/images/wordcloud.png)
 
 
 
