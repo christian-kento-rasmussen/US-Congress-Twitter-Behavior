@@ -17,7 +17,7 @@ In the matrix below, we have compared how the members of the different parties h
 
 ![](/images/Matrix.png)
 
-However, regarding polarization, we see taht in the first two communities found by the algorithm, there is a clear division between republicans and democrats, with about 80% of the democrats and 10% of the republicans in the first community, and about 70% of the republicans and 2% of the democrats in the second community. In the third and fourth communities, the proportion of republicans to democrats vice versa is also low.
+Regarding polarization, we see that in the first two communities found by the algorithm, there is a clear division between republicans and democrats, with about 80% of the democrats and 10% of the republicans in the first community, and about 70% of the republicans and 2% of the democrats in the second community. In the third and fourth communities, the proportion of republicans to democrats vice versa is also low.
 
 It appears, that our optimal partitioning still generates polarization, which is a strong indicator for the fact, that there is polarization within the US congress. We see this in the way, that the different communities are divided so heavily along party line. We will now investigate, whether or not the different communities are centered around policy issues. As a proxy measure for this, we will look at the most central node in each community, measured by indegree centrality, and see whether or not it is a caucus or a committee.
 
