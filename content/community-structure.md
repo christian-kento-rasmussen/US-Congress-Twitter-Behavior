@@ -28,7 +28,7 @@ That is, if we have a community heavily centered around the Committee for Climat
 As a way to measure polarization in the different communities we will also employ the measure "partisanship," which is calculated by first finding out how big a percentage of the community is republican and how big a percentage is democratic, and taking the maximum of that. This means, that we have a range of partisanship from [0,1], where 0 indicates that 0% of the members belong to any political party, and 1 indicates that 100% of the members belong to the same party.
 
 
-<!-- ^Mangler lige at poste mein graf her -->
+![](/images/LouvainGraf.png)
 
 When running a single sample of the Louvain algorithm, we see, that the smallest communities have none to negative partisanship, showing how they're very much not polarized. And at the same time, the central nodes of these communities have a very high centrality, which indicates, that they're the focus of the communication taking place in those communities. 
 
