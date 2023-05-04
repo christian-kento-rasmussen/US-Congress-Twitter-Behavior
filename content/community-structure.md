@@ -13,9 +13,11 @@ next: congressional-communities
 
 Using the Louvain clustering algorithm, we optimize for modularity score and get a partitioning with a modularity of around 0.35. Giving us an approximately 36% and 75% percent increase compared to party-chamber and party-party partioning respectively, indicating that there indeed is a third dimension to the way the congressial communities organize themselves, beyond party and party-chamber.
 
-In the matrix below, we have compared how the members of the different parties have spread themselves out across the Louvain-based partitionings. 
+In the matrix below, we have compared how the members of the different parties have spread themselves out across the Louvain-based partitionings. The communities are ranked after member size, and the number in each element represents how many members of that specific row's political affiliation that are in the chosen element, measured in percentage.
 
 ![](/images/Matrix.png)
+
+We see that the two political parties tend to concentrate the majority of their members in two seperate communities, the second
 
 Regarding polarization, we see that in the first two communities found by the algorithm, there is a clear division between republicans and democrats, with about 80% of the democrats and 10% of the republicans in the first community, and about 70% of the republicans and 2% of the democrats in the second community. In the third and fourth communities, the proportion of republicans to democrats vice versa is also low.
 
