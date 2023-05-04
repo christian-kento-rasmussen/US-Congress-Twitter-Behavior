@@ -11,7 +11,9 @@ next: congressional-communities
             Evt. statistisk tests
 -->
 
-Using the Louvain clustering algorithm, we optimize for modularity score and get a partitioning with a modularity of 0.35. The Louvain partitioning is compared with the partitioning by party in a confusion matrix below. With the Louvain partitioning, we get an approximately 36% and 75% percent increase compared to party-chamber and party-party partioning respectively, indicating that there indeed is a third dimension to the way the congressial communities organize themselves, beyond party and party-chamber.
+Using the Louvain clustering algorithm, we optimize for modularity score and get a partitioning with a modularity of around 0.35. Giving us an approximately 36% and 75% percent increase compared to party-chamber and party-party partioning respectively, indicating that there indeed is a third dimension to the way the congressial communities organize themselves, beyond party and party-chamber.
+
+In the matrix below, we have compared how the members of the different parties have spread themselves out across the Louvain-based partitionings. 
 
 ![](/images/Matrix.png)
 
