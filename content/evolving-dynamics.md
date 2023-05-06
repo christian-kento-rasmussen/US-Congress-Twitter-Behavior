@@ -1,18 +1,21 @@
 ---
 title: Evolving Democrat-Republican Dynamics
-prev: "/"
-next: network-analysis
+prev: "congressional-communities"
 ---
-
-As a final analysis we wanted to see if these measure and conclusions changes over the 6 years we have data on. To start this analysis, we have plottet below the assortivity coefficient for each year.
+ 
+As a final analysis we wanted to see if these measures and conclusions changes over the 6 years we have data on. To start this analysis, we have plotted the assortativity coefficient (fraction of tweets to members in the same party) for each year. Together with the proportion of tweets between the different parties for each year.
 
 ![](/images/Assortativity-timeline.png)
 
-From the above plot we can see that. 
-
-When looking at the modularity of the communities found in the preview section, we can see that the modularity is decreasing over time. This means that the communities are becoming less and less distinct. This is also supported by the fact that the assortativity coefficient is decreasing over time.
+From the above plot we can see that the assortativity coefficient is increasing over time. And the cross-party communication is decreasing. This shows that the party members are becoming more polarized as the on average talk with less people from the other party year-to-year.
+ 
+When looking at the modularity of the Louvain communities found in the previous section, we can see that the modularity has increased from 2017 to 2023. This means that the communities are becoming more distinct and less overlapping. This is also a sign of polarization.
 
 ![](/images/Modularity-timeline.png)
+
+These measures shows a worrying trend in the US political landscape on social media. The communities are becoming more distinct, which indicates that parties are becoming more polarized. Assuming political discourse on twitter is consistent with the political discourse of congress in general, the US congress is undergoing a troublesome evolution that could hinder the US democratic process.
+ 
+
 
 <!--
 ## How we have created our dataset

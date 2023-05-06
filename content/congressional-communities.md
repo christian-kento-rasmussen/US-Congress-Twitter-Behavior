@@ -1,6 +1,6 @@
 ---
 title: Community Structures Text Analysis
-prev: "community-structure"
+prev: community-structure
 next: evolving-dynamics
 ---
 
@@ -8,47 +8,50 @@ next: evolving-dynamics
 om here we would like to see, what underlying structures, if not political party, that binds the different communities together. Is it a special commitee that they talk a lot about, a law or a maybe a more general topic like foreign policy or welfare? We do this by doing text analysis on the biggest communities to see which keywords that describe them best. We would furthermore also like to do some wordclouds on these communities. [Congressional-communities](congressional-communities)
 -->
 
-We now want to analyse the tweets in each community to better understand the underlying structure of the communities. As a starting point for this analysis we will calculate the term frequency of each of the top 6 communities (based on number of nodes). The top 10 tokens for each community is shown in the table below.
+We now want to analyze the tweets in each community to better understand the underlying structure of the communities. As a starting point for this analysis we will calculate the term frequency of each of the top 6 communities (based on number of nodes). The top 10 tokens for each community is shown in the table below.
 
-| Partition | Top 10 Tokens |
+| Community (Majority) | Top 10 Tokens |
 | --- | --- |
-| 0 | house, american, democrats, act, bill, americans, biden, congress, people, border |
-| 1 | act, house, congress, bill, people, proud, health, work, american, need |
-| 2 | senate, bill, act, american, bipartisan, support, help, americans, work, democrats |
-| 3 | senate, act, bill, health, help, care, need, bipartisan, people, americans |
-| 4 | act, research, science, bill, read, american, hearing, energy, house, committee |
-| 5 | people, house, act, chairman, support, statement, president, security, american, foreign |
+| 0 (Rep-House) | house, american, democrats, act, bill, americans, biden, congress, people, border |
+| 1 (Dem-House) | act, house, congress, bill, people, proud, health, work, american, need |
+| 2 (Rep-Senate) | senate, bill, act, american, bipartisan, support, help, americans, work, democrats |
+| 3 (Dem-Senate) | senate, act, bill, health, help, care, need, bipartisan, people, americans |
+| 4 (Mixed) | act, research, science, bill, read, american, hearing, energy, house, committee |
+| 5 (Mixed) | people, house, act, chairman, support, statement, president, security, american, foreign |
 
-We can see that the communities are quite similar in terms of the most frequent tokens. This is not surprising as we can see that the most frequent tokens are related to the political process, such as bills, acts, senate, house, and congress. Furthermore, we can see that the communities are also related to the political parties, as the tokens democrats and republicans are present in the top 10 tokens for all communities. 
-We already know from the confusion matrix of ??? on page ??? that partition 0 and 2 are mostly republicans and 1 and 3 are mostly democrats. This is also supported when looking at the top 3 accounts for each community. Where 0 and 2 are House and senate republicans and 1 and 3 are house and senate democrats.
+We can see that the communities are quite similar in terms of the most frequent tokens. This is not surprising as we can see that the most frequent tokens are related to the political process, such as bills, acts, senate, house, and congress. Furthermore, we can see that the communities are also related to the political parties, as the tokens democrats and republicans are present in the top 10 tokens for most of the communities. 
+We already know from the confusion matrix of party membership over communities on the page [Community-structure](/community-structure) that partition 0 and 2 are mostly republicans and 1 and 3 are mostly democrats. This is also supported when looking at the top 3 accounts for each community. Where 0 and 2 are House and Senate republicans respectively, and 1 and 3 are House and Senate democrats respectively.
 
-| Partition | Top 3 accounts |
+| Community (Majority) | Top 3 accounts |
 | --- | --- |
-| 0 | House Republicans, House Committee on Energy and Commerce, House Committee on Ways and Means |
-| 1 | House Democrats, House Committee on the Judiciary, Hispanic Caucus |
-| 2 | Senate Republicans, John Cornyn, Ted Cruz |
-| 3 | Senate Democrats, Chuck Schumer, Dick Durbin |
-| 4 | House Committee on Science Space and Technology, Eddie Bernice Johnson, Frank Lucas |
-| 5 | House Committee on Foreign Affairs, Michael McCaul, Gregory Meeks |
+| 0 (Rep-House) | House Republicans, House Committee on Energy and Commerce, House Committee on Ways and Means |
+| 1 (Dem-House) | House Democrats, House Committee on the Judiciary, Hispanic Caucus |
+| 2 (Rep-Senate) | Senate Republicans, John Cornyn, Ted Cruz |
+| 3 (Dem-Senate) | Senate Democrats, Chuck Schumer, Dick Durbin |
+| 4 (Mixed) | House Committee on Science Space and Technology, Eddie Bernice Johnson, Frank Lucas |
+| 5 (Mixed) | House Committee on Foreign Affairs, Michael McCaul, Gregory Meeks |
 
-To get a better understanding of the difference between the communities we will now calculate the TF-IDF for each community. As the TF-IDF measure is is weighted by the inverse document frequency, it will give a higher weight to tokens that are more unique to each community. The top 10 TF-IDF tokens for each community is shown in the table below, and in the wordcloud.
+To get a better understanding of the difference between the communities we have calculated the TF-IDF for each community. As the TF-IDF measure is weighted by the inverse document frequency, it will give a higher weight to tokens that are more unique to each community. The top 10 TF-IDF tokens for each community is shown in the table below, and in the wordcloud.
 
-| Partition | Top 10 TF-IDF |
+| Community (Majority) | Top 10 TF-IDF |
 | --- | --- |
-| 0 | joe, schiff, mandate, adam, ec, farm, sham, defund, censure, infanticide |
-| 1 | student, immigrant, progressive, citizenship, hall, weapons, sisters, para, los, cpc |
-| 2 | rubio, joe, hatch, tennessee, georgia, farm, idaho, hawley, iowans, iowas |
-| 3 | georgia, nevadans, nevada, student, stock, jackson, nh, nominees, doug, hampshire |
-| 4 | oklahomas, telescope, oklahoma, rubin, researchers, quantum, icorps, possibleeven, necessaryto, telescopes |
-| 5 | ametamct, ambassador, diplomacy, terrorist, weapons, regimes, syria, iranian, africa, gratitudeand |
+| 0 (Rep-House) | joe, schiff, mandate, adam, ec, farm, sham, defund, censure, infanticide |
+| 1 (Dem-House) | student, immigrant, progressive, citizenship, hall, weapons, sisters, para, los, cpc |
+| 2 (Rep-Senate) | rubio, joe, hatch, tennessee, georgia, farm, idaho, hawley, iowans, iowas |
+| 3 (Dem-Senate) | georgia, nevadans, nevada, student, stock, jackson, nh, nominees, doug, hampshire |
+| 4 (Mixed) | oklahomas, telescope, oklahoma, rubin, researchers, quantum, icorps, possibleeven, necessaryto, telescopes |
+| 5 (Mixed) | ametamct, ambassador, diplomacy, terrorist, weapons, regimes, syria, iranian, africa, gratitudeand |
 
-From the above table and the wordcloud below, we can see that some of the top words for community 0 are "joe" and "defund" which are part of the words for "Joe Biden" and "Defund the police". Which means that this community has talked vocally about these subjects. This is of couse true for the republicans as they have especially used the "Defund the police" movement as a way to discredit democrats in past elections.
-We can also see that the two big democratic communities (1 and 3) have words such as student, progressive, and weapons. Which are some of the democratic parties main issuies.
+From the above table and the wordcloud below, we can see that some of the top words for community 0 are "joe" and "defund" which are part of the words for "Joe Biden" and "Defund the police". Which means that this community has talked vocally about these subjects. This is especially true for the republicans as they have used the "Defund the police" movement as a way to discredit democrats in past elections.
+We can also see that the two big democratic communities (1 and 3) have words such as student, progressive, and weapons. Which are some of the democratic parties main political issues.
 
-Community 5 looks to be centered around foreigh affairs as they top words are "syria", "iranian", and "africa" and they top 3 accounts are the committe and two congressmen from the committe. In future analysis, it could be interesting to look at the other nodes in the network to see what other political apponties are with in this committe, as they probably also have a vested interest in foreign affairs.
+Community 5 looks to be centered around foreign affairs as they top words are "syria", "iranian", and "africa" and they top 3 accounts are the committee and two congressmen from the committee. In future analysis, it could be interesting to look at the other nodes in the network to see what other political appointees are within this committee, as they probably also have a vested interest in foreign affairs.
+
+Likewise, community 4 seems to be focused on space research, with the central account being the House Committee on Science, Space and Technology, and the top words including 'oklahoma', 'telescope', 'rubin' and 'researchers', possibly in connection to the Rubin Observatory and the Oklahoma University Observatory or the Oklahoma Science Museum.
 
 ![](/images/wordcloud.png)
 
+In general, it seems that the 4 largest communities are centered around the political issues that the parties are particularly vocal about, whereas the smaller communities are centered around nonpartisan topics such as space and foreign affairs. For members of the smaller communities, it seems that their twitter discussions are more topic-affiliated than party-affiliated. However, these communities are fairly small, with the largest community outside the top 4 consisting of 6 members. Therefore, it is a small minority of the members of congress for which the topic-affiliation is the greatest.
 
 <!--
 ## How we have created our dataset
