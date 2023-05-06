@@ -72,7 +72,7 @@ The graph contains ?? nodes and ???? edges. The distribution of degree of edges 
 
 ![](/images/degree-distribution.png)
 
-From the graph we can see that the distribution of degree of edges is very skewed. This means that there are a few nodes with a very high degree and a lot of nodes with a very low degree. This is expected as there are a few users who are very active on twitter and a lot of users who are not. **Which looks like it could follow a power law (EXPAND??)**
+From the graph we can see that the distribution of degree of edges is very skewed. This means that there are a few nodes with a very high degree and a lot of nodes with a very low degree. This is expected as there are a few users who are very active on twitter and a lot of users who are not. When plotting the distribution on a log-log scale we can see that the distribution looks to loosely follow a power law. With parameters:$$C=0.002, \gamma=1.182$$.
 
 
 <!--- 

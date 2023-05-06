@@ -34,8 +34,16 @@ TF-IDF
 | 4 | rm, chm, democracy, allies, partners, ccp, chinese, humanitarian, hong, attack |
 | 5 | wyoming, dnd, nazilinked, duplication, gregg, outlook, laramie, cbos, deliberating, wyomings |
 
+Top accounts
+| Partition | Top 3 accounts |
+| --- | --- |
+| 0 | House Democrats, House Committee on the Judiciary, Hispanic Caucus |
+| 1 | House Republicans, House Committee on Energy and Commerce, House Committee on Ways and Means |
+| 2 | Senate Republicans, John Cornyn, Ted Cruz |
+| 3 | Senate Democrats, Chuck Schumer, Dick Durbin |
+| 4 | House Committee on Foreign Affairs, Michael McCaul, Gregory Meeks |
 
-## Word clouds
+## Word clouds 
 ![](/images/wordcloud.png)
 
 
