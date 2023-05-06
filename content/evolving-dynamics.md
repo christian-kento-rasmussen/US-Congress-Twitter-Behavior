@@ -4,9 +4,15 @@ prev: "/"
 next: network-analysis
 ---
 
+As a final analysis we wanted to see if these measure and conclusions changes over the 6 years we have data on. To start this analysis, we have plottet below the assortivity coefficient for each year.
 
+![](/images/Assortativity-timeline.png)
 
+From the above plot we can see that. 
 
+When looking at the modularity of the communities found in the preview section, we can see that the modularity is decreasing over time. This means that the communities are becoming less and less distinct. This is also supported by the fact that the assortativity coefficient is decreasing over time.
+
+![](/images/Modularity-timeline.png)
 
 <!--
 ## How we have created our dataset
