@@ -28,13 +28,15 @@ The raw data consist of 2.6GB of json files with tweets from 2017 up to and incl
 
 This data has then been parsed into 4 differnet dataframes. Which is used to construct a single directed multigraph where nodes are users and edges are each time a user mentions ('@name_of_mention') another user in a tweet. The graph and dataframe have also been filted based on tweet year for later analysis.
 
+We also had a JSON file called [historical users](https://github.com/alexlitel/congresstweets-automator/blob/master/data/historical-users-filtered.json) consisting of data on the different twitter users. It contained the name of the user, which chamber they were a part of, their political affiliation, what type of user they were (comittee, political party, member or caucus) and a list of which twitter accounts were associated with that user. Furthermore, if the user was a member of congress they would also have a field explaining which state they represented. 
+
 # The four dataframes and graph are:
 
 ## 1. Users dataframe: (@benjamin husk lige at nævn at vi har filtered bruger til kun nogle bestemte)
 
 The main purpose of the user dataframe is to gather data on the real life organizations or humans who use the twitter accounts.
 
-Each user represents a person or organization related to the U.S congress, who may have multiple Twitter accounts. Each row in our users dataframe has the following information:
+Each user represents a person or organization related to the U.S congress, who may have multiple Twitter accounts and whom is a part of the historical users JSON file. Each row in our users dataframe has the following information:
 * The user's name, which we use as a unique identifier, as no members of congress in our dataset have the same name.
 * Which house they're part of (representatives or senate)
 * Their type, that is, wheter the user is a commitee, a member (human), party or caucus
