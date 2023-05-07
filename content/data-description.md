@@ -32,7 +32,7 @@ We also had a JSON file called [historical users](https://github.com/alexlitel/c
 
 # The four dataframes and graph are:
 
-## 1. Users dataframe: (@benjamin husk lige at nævn at vi har filtered bruger til kun nogle bestemte)
+## 1. Users dataframe:
 
 The main purpose of the user dataframe is to gather data on the real life organizations or humans who use the twitter accounts.
 
@@ -50,52 +50,40 @@ Size: 806
 As each user can have multiple Twitter accounts, we needed a dataframe to link between accounts and the real life organization/person that uses these whenever, we wanted to figure out who had tweeted something, and at whom.
 
 Each row in our accounts data is a single account, and consists of the following data:
-* ID, the ID of that specific account
-* screen_name, the name of that specific account
-* account_type, whether it is an office or campaign account
-* name, the name of the user behind the account
+* ID: the ID of that specific account
+* screen_name: the name of that specific account
+* account_type: whether it is an office or campaign account
+* name: the name of the user behind the account
 
 Size: 1754
 
 
 ## 3. Tweets dataframe:
 
-Size: 4777249 entries
+The tweets dataframe consists of all the tweets information. The primary purpose of this dataframe was to provide an organized way to do text analysis. It has a size of 4777249 entries
 
-user_name: The username of the user behind the tweet
-
-screen_name: The name of the account from which the tweet was posted
-
-tweet_account_ID: The ID of that account
-
-tweet_ID: The unique identifier identifying that single tweet
-
-handles_mentioned: All the twitter handles mentioned, which are in our account dataframe.
-
-names_mentioned: The username of the accounts mentioned.
+Each row is a single tweet with the following information:
+* user_name: The username of the user behind the tweet
+* screen_name: The name of the account from which the tweet was posted
+* tweet_account_ID: The ID of that account
+* tweet_ID: The unique identifier identifying that single tweet
+* handles_mentioned: All the twitter handles mentioned, which are in our account dataframe.
+* names_mentioned: The username of the accounts mentioned.
 
 
 ## 4. text dataframe:
 
-The text dataframe consists of all the text of every tweet in the tweets dataframe. The primary purpose of this dataframe was to provide an organized way to do text analysis.
+The text dataframe consists of all the text of every tweet in the tweets dataframe. This should be used together with the tweets dataframe. It has a size of 4777249 entries
 
-Each row is a single tweet.
-
-Size: 4777249 entries
-
-user_name: The username of the user behind the tweet
-
-screen_name: The name of the account from which the tweet was posted
-
-text: The actual text of that tweet
-
-tweet_ID: The unique identifier identifying that single tweet
-
-
+Each row is a single tweet with the following information:
+* user_name: The username of the user behind the tweet
+* screen_name: The name of the account from which the tweet was posted
+* text: The actual text of that tweet
+* tweet_ID: The unique identifier identifying that single tweet
 
 ## 4. Multidirected graph:
 
-The multidirectional graph was created by making each user a node and each time a user mentions another user in a tweet an edge. The graph is directed as the order of the mention is important. The graph is multidirectional as there often are multiple tweets between users. We choose to make it multidirectional because we wanted to keep the information (text, sentiement...) that each individual tweet contains instead of just counting the number of tweets between users.
+The multidirectional graph was created by making each user a node and each time a user mentions another user in a tweet an edge. The graph is directed as the order of the mention is important. The graph is multidirectional as there often are multiple tweets between users. We choose to make it multidirectional because we wanted to keep the information that each individual tweet contains instead of just counting the number of tweets between users.
 
 The graph contains 803 nodes and 1,602,970 edges. The distribution of degree of edges is shown below.
 
