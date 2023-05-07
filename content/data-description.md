@@ -4,7 +4,7 @@ prev: "/"
 next: network-structure
 ---
 
-To perform this analysis we need to collect tweets from member of the United States Congress. An ideal way to do this, would be to call the twitter api and request tweets in a specific time period with hastags or accounts names that mathces with member of the congress. However, this approach is not feasible after Twitter has changed their policy when Mr. Musk accouired the company. Therefore, we have used the public available dataset of US Congress tweets hosted on [github](https://github.com/alexlitel/congresstweets) and part of the open source project [Congressional Tweet Automator](https://github.com/alexlitel/congresstweets-automator).
+To perform this analysis we need to collect tweets from member of the United States Congress. An ideal way to do this, would be to call the twitter api and request tweets in a specific time period with hastags or accounts names that mathces with member of the congress. However, this approach is not feasible after Twitter has changed their policy when Mr. Musk accouired the company. Therefore, we have used the public available dataset of US Congress tweets hosted on [github](https://github.com/alexlitel/congresstweets) and part of the open source project [Congressional Tweet Automator](https://github.com/alexlitel/congresstweets-automator). The source code can be viewed [here](https://christian-kento-rasmussen.github.io/US-Congress-Twitter-Behavior/explainer-notebook.html).
 
 The raw data consist of 2.6GB of json files with tweets from 2017 up to and including 2023. The data is structured in a way that each json file contains tweets from a specific month and year. An example of a raw tweet is shown below.
 

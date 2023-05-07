@@ -4,7 +4,7 @@ description = "US Congress Twitter Behavior description"
 relativeURLs = true
 theme = "theme"  
 [params] 
-    authors = ["christian", "Mathias", "Benjamin"]
+    authors = ["Christian", "Mathias", "Benjamin"]
     notebook = "/explainer-notebook.html"
     data = "https://github.com/alexlitel/congresstweets/tree/master/data"
     github = "https://github.com/christian-kento-rasmussen/US-Congress-Twitter-Behavior"
