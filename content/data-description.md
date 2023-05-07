@@ -97,7 +97,7 @@ tweet_ID: The unique identifier identifying that single tweet
 
 The multidirectional graph was created by making each user a node and each time a user mentions another user in a tweet an edge. The graph is directed as the order of the mention is important. The graph is multidirectional as there often are multiple tweets between users. We choose to make it multidirectional because we wanted to keep the information (text, sentiement...) that each individual tweet contains instead of just counting the number of tweets between users.
 
-The graph contains ?? nodes and ???? edges. The distribution of degree of edges is shown below.
+The graph contains 803 nodes and 1,602,970 edges. The distribution of degree of edges is shown below.
 
 ![](/images/degree-distribution.png)
 
