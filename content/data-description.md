@@ -60,11 +60,38 @@ Size: 1754
 
 ## 3. Tweets dataframe:
 
-This dataframe describes data related to each tweet. It tells us 
-text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, 
+Size: 4777249 entries
 
-## 4. last dataframe:
-text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, text here, 
+user_name: The username of the user behind the tweet
+
+screen_name: The name of the account from which the tweet was posted
+
+tweet_account_ID: The ID of that account
+
+tweet_ID: The unique identifier identifying that single tweet
+
+handles_mentioned: All the twitter handles mentioned, which are in our account dataframe.
+
+names_mentioned: The username of the accounts mentioned.
+
+
+## 4. text dataframe:
+
+The text dataframe consists of all the text of every tweet in the tweets dataframe. The primary purpose of this dataframe was to provide an organized way to do text analysis.
+
+Each row is a single tweet.
+
+Size: 4777249 entries
+
+user_name: The username of the user behind the tweet
+
+screen_name: The name of the account from which the tweet was posted
+
+text: The actual text of that tweet
+
+tweet_ID: The unique identifier identifying that single tweet
+
+
 
 ## 4. Multidirected graph:
 
